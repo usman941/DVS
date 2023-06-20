@@ -3,11 +3,13 @@ import { createContext,useState } from 'react';
 import { ethers } from 'ethers';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router';
 const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
     const[address,setAddress]=useState('');
     const[balance,setBalance]=useState('');
     const[forgetToken,setForgetToken]=useState('');
+   
     const[token,setToken]=useState({
       tk:"",
       status:false,
@@ -92,7 +94,9 @@ const AuthProvider = ({ children }) => {
         );
     
         console.log('SignUp result:', result);
-        toast.info(result.data.msg);
+        toast.info("User Created Successfully");
+       
+
       } catch (error) {
         console.log('Error While Signing up', error);
         toast.info(error.response.data.msg);

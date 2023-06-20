@@ -44,7 +44,7 @@ const Footer = () => {
             
           </ul>
           
-          <div className='px-3 sm:lg:px-0 md:px-0 xl:px-0 lg:px-0 lg:pt-20 md:pt-20 pt-4 text-white pr-1 '>
+          <div className='px-3 lg:mr-24 xl:mr-24 sm:lg:px-0 md:px-0 xl:px-0 lg:px-0 lg:pt-20 md:pt-20 pt-4 text-white pr-1 '>
            
             <p className='cursor-pointer mt-1  '><Link>Home</Link></p>
             <p className='cursor-pointer mt-1  '><Link to='/'> About us</Link><br></br> <span className=''><Link to='/contact'> Contact us</Link> </span> <br></br> <span className='underline'> © Copyrights HEC 2023</span></p>

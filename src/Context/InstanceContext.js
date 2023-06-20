@@ -37,7 +37,7 @@ const InstanceProvider=({children})=>{
             formdata.append('gender',gender);
             formdata.append('fullname',name);
             formdata.append('cnic_no',cnic);
-            formdata.append('degree_reg_no',registration)
+            formdata.append('degree_reg_no',registration);
             formdata.append('degreeImage',images);
             formdata.append('university',university);
             formdata.append('passing_year',passingYear);

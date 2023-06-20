@@ -13,6 +13,7 @@ import UpdatePassword from "./UpdatePassword";
 import About from "./About";
 import Protected from "../components/Protected";
 import Status from "./Status";
+import DegreeDetail from "./DegreeDetail";
 
 const Landing = () => {
   return (
@@ -31,6 +32,8 @@ const Landing = () => {
           <Route path="/updatePassword/:token" element={<UpdatePassword/>}/>
           <Route path="/registeredDegrees" element={<Protected Component={RegisteredDegrees}/>}/>
           <Route path="/status" element={<Protected Component={Status}/>}/>
+          <Route path="/detail" element={<Protected Component={DegreeDetail}/>}/>
+
 
           {/* <Route path="/about" element={<About/>}/> */}
 

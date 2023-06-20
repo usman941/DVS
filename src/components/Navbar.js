@@ -33,7 +33,7 @@ const {address,setToken}=useContext(AuthContext);
         
         <div className='hidden md:flex z-50 '>
         <ul className='flex md:my-3 md:justify-evenly md:items-center md:flex-wrap text-black text-center'>
-        <li className='px-3  inline-flex items-center hover:text-[#48A4EF] '><Link to='/'> <AiFillHome className=' text-xl inline-flex mx-1 items-center '/>Home</Link></li>
+        <li className='px-3  inline-flex items-center hover:text-[#48A4EF] '><Link to='/'> <AiFillHome className=' text-xl inline-flex mx-1 items-center text-center '/>Home</Link></li>
         {/* <li  className='px-3 inline-flex items-center text-sm cursor-pointer hover:text-[#48A4EF]'  ><Link to='/about'><FcAbout className='text-xl inline-flex mx-1 items-center' /> About us</Link></li> */}
 
         <li  className='px-3 inline-flex items-center text-sm cursor-pointer hover:text-[#48A4EF]'  > <GrDocumentUpdate className='text-xl inline-flex mx-1 items-center hover:text-[#48A4EF]' /><Link to='/apply'>Apply</Link></li>
